@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Produce Hero</string>
+    <string name="sign_in">Sign In</string>
+    <string name="produce_image_description">produce</string>
+
+    <string name="routes_activity_title">Routes</string>
+    <string name="map_button_label">Map</string>
+    <string name="signed_label">Signed</string>
+    <string name="order_activity_title">Order</string>
+    <string name="modify_item_button_label">Adjust</string>
+    <string name="quantity_label">Quantity:</string>
+    <string name="increment_button_label">+</string>
+    <string name="decrement_button_label">-</string>
+    <string name="delete_button_label">Delete</string>
+    <string name="modify_item_activity_title">Change Item</string>
+    <string name="signature_done_button_label">Done</string>
+    <string name="signature_cancel_button_label">Cancel</string>
+    <string name="signature_clear_label">Clear</string>
+    <string name="sample_dollar_amount">$355.76</string>
+    <string name="sign_out_menu_label">Sign Out</string>
+    <string name="sign_order_label">Sign</string>
+    <string name="save_item_menu_label">Save</string>
+</resources>

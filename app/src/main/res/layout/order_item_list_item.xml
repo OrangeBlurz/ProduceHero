@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Order Item"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/item_quantity_wrapper_shape"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/item_name_view"
+        app:layout_constraintTop_toBottomOf="@+id/item_name_view">
+
+        <TextView
+            android:id="@+id/item_weight_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_weight_shape"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@android:color/white"
+            tools:text="1kg" />
+
+        <TextView
+            android:id="@+id/item_quantity_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/white"
+            tools:text="x10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/modify_item_button"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_positive"
+        android:text="@string/modify_item_button_label"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_name_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

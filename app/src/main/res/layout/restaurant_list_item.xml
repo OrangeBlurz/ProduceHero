@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/restaurant_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Restaurant Name" />
+
+    <TextView
+        android:id="@+id/restaurant_address_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_name_view"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_name_view"
+        tools:text="Restaurant Address"/>
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_positive"
+        android:textColor="@android:color/white"
+        android:text="@string/map_button_label"
+        app:layout_constraintBottom_toBottomOf="@+id/restaurant_address_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restaurant_name_view" />
+
+    <Button
+        android:id="@+id/signed_button"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="false"
+        android:text="@string/signed_label"
+        android:background="@drawable/button_neutral"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/restaurant_address_view"
+        app:layout_constraintEnd_toStartOf="@+id/map_button"
+        app:layout_constraintTop_toTopOf="@+id/restaurant_name_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
